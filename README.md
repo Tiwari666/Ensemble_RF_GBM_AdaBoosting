@@ -84,6 +84,10 @@ alone.
 ![image](https://github.com/Tiwari666/Ensemble_RF_GBM_AdaBoosting/assets/153152895/b6fe5840-ebfe-46dd-8689-8a4af7e27beb)
 
 
+# When to use Bagging vs Boosting vs Stacking?
+
+![image](https://github.com/Tiwari666/Ensemble_RF_GBM_AdaBoosting/assets/153152895/9a60ce1f-8208-42ac-b256-9251602b8492)
+
 # GIST: 
 Ensemble learning refers to algorithms that combine the predictions from two or more models.
 The idea of ensemble methods is to try reducing bias and/or variance of such weak learners by combining several of them
