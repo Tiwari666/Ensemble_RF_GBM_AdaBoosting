@@ -17,7 +17,7 @@ d) Less affected by outliers:  Ensemble models tend to be more robust and stable
 
 #  Some common Ensembled algorithms:
 
-A) Bagging (Bootstrap Aggregating:parallel ensemble method): The predictions of individual models are then aggregated through averaging (for regression tasks) or voting (for classification tasks) to make the final prediction.
+# A) Bagging (Bootstrap Aggregating:parallel ensemble method): The predictions of individual models are then aggregated through averaging (for regression tasks) or voting (for classification tasks) to make the final prediction.
  Each instance is trained in parallel, meaning that they can be executed simultaneously on separate computational units (e.g., CPU cores, threads, or distributed computing nodes).
 
 Example of parallel ensemble techniques: Bagging (Bootstrap Aggregating)-- Random Forest for decision trees and Bagged SVM for support vector machines.
@@ -43,7 +43,7 @@ c) Prediction Combination: Combine the predictions from all base models through 
  
 
 
-B) Boosting (Sequential ensemble techniques):
+# B) Boosting (Sequential ensemble techniques):
 
 Boosting aims to correct the errors of the previous learners and improve overall performance iteratively.
 Examples include AdaBoost (Adaptive Boosting), Gradient Boosting Machines (GBM), XGBoost, and LightGBM.
@@ -66,7 +66,7 @@ Steps involved:
 
 
 
-C) Stacking (Stacked Generalization): 
+# C) Stacking (Stacked Generalization): 
 
 Stacking can involve multiple layers of base learners and meta-learners, creating a hierarchical ensemble.
 
@@ -114,8 +114,40 @@ Stacking works using heterogeneous solid learners.
 
 All three of these methods can work with either classification or regression problems.
 
+# Decision Trees ( SINGLE MODEL ALGORITHM) and Random Forests (ENSEMBLE MODEL ALGORITHM):
 
-SOURCES:
+Decision Tree and Random Forest are both machine learning algorithms used for classification and regression tasks.
+
+Both averaging predictions ( for regression) and taking the majority vote ( for classification) are used with Decision Trees and Random Forest algorithms. 
+
+Decision Tree:
+
+Decision trees have a high variance and low bias, meaning they are prone to overfitting, especially if they grow deep. They may capture noise in the training data and not generalize well to unseen data.
+
+For a single Decision Tree, predictions are typically made by traversing the tree from the root to a leaf node based on the feature values of the input instance. The predicted outcome is the majority class or the mean value of the instances in the leaf node.
+If you have multiple Decision Trees (e.g., in a Random Forest), predictions can be averaged or combined through voting. For classification tasks, this involves counting the number of trees that predict each class and selecting the class with the highest count (majority vote). For regression tasks, the predicted outcome is the average of the predictions from all trees.
+
+Random Forest:
+
+Random Forest reduces overfitting by aggregating the predictions of multiple decision trees trained on different subsets of the data. By combining the predictions, Random Forest mitigates the variance of individual trees, leading to a more robust model with lower risk of overfitting.
+
+Random Forest is an ensemble method that consists of multiple Decision Trees trained on different subsets of the data. When making predictions with a Random Forest:
+For classification tasks: Each tree in the forest independently predicts the class of the input instance, and the final prediction is determined by taking the majority vote among all trees.
+For regression tasks: Each tree predicts a continuous value, and the final prediction is the average of the predictions from all trees.
+
+
+In summary, we use  Decision Trees when interpretability, simplicity, and transparency are important, and the dataset is small to medium-sized with relatively low complexity. 
+
+We Use Random Forest when there is a risk of overfitting, the dataset is large or high-dimensional, and higher predictive accuracy is desired.
+
+
+
+
+
+
+
+# SOURCES:
+
 lINK 1: https://www.analyticsvidhya.com/blog/2023/01/ensemble-learning-methods-bagging-boosting-and-stacking/
 
 
