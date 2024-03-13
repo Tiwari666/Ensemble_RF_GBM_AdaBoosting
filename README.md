@@ -148,7 +148,9 @@ We Use Random Forest when there is a risk of overfitting, the dataset is large o
 
 # SOURCES:
 
-lINK 1: https://www.analyticsvidhya.com/blog/2023/01/ensemble-learning-methods-bagging-boosting-and-stacking/
+Link 1: https://www.analyticsvidhya.com/blog/2023/01/ensemble-learning-methods-bagging-boosting-and-stacking/
+
+Link 2: https://towardsdatascience.com/decision-trees-and-random-forests-df0c3123f991
 
 
 
