@@ -125,14 +125,19 @@ Decision Tree:
 Decision trees have a high variance and low bias, meaning they are prone to overfitting, especially if they grow deep. They may capture noise in the training data and not generalize well to unseen data.
 
 For a single Decision Tree, predictions are typically made by traversing the tree from the root to a leaf node based on the feature values of the input instance. The predicted outcome is the majority class or the mean value of the instances in the leaf node.
+
 If you have multiple Decision Trees (e.g., in a Random Forest), predictions can be averaged or combined through voting. For classification tasks, this involves counting the number of trees that predict each class and selecting the class with the highest count (majority vote). For regression tasks, the predicted outcome is the average of the predictions from all trees.
 
 Random Forest:
 
 Random Forest reduces overfitting by aggregating the predictions of multiple decision trees trained on different subsets of the data. By combining the predictions, Random Forest mitigates the variance of individual trees, leading to a more robust model with lower risk of overfitting.
 
-Random Forest is an ensemble method that consists of multiple Decision Trees trained on different subsets of the data. When making predictions with a Random Forest:
+Random Forest is an ensemble method that consists of multiple Decision Trees trained on different subsets of the data.
+
+When making predictions with a Random Forest:
+
 For classification tasks: Each tree in the forest independently predicts the class of the input instance, and the final prediction is determined by taking the majority vote among all trees.
+
 For regression tasks: Each tree predicts a continuous value, and the final prediction is the average of the predictions from all trees.
 
 
