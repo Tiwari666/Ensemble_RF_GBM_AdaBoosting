@@ -20,7 +20,8 @@ d) Less affected by outliers:  Ensemble models tend to be more robust and stable
 A) Bagging (Bootstrap Aggregating:parallel ensemble method): The predictions of individual models are then aggregated through averaging (for regression tasks) or voting (for classification tasks) to make the final prediction.
  Each instance is trained in parallel, meaning that they can be executed simultaneously on separate computational units (e.g., CPU cores, threads, or distributed computing nodes).
 
-Example of parallel ensemble techniques: Bagging (Bootstrap Aggregating)
+Example of parallel ensemble techniques: Bagging (Bootstrap Aggregating)-- Random Forest for decision trees and Bagged SVM for support vector machines.
+
 
 Bootstrap: Random sampling with replacement
   
@@ -37,9 +38,10 @@ c) Prediction Combination: Combine the predictions from all base models through 
 
 
 
+![image](https://github.com/Tiwari666/Ensemble_RF_GBM_AdaBoosting/assets/153152895/de72da1a-5edb-46f2-a5df-139db045d63a)
 
  
-Examples include Random Forest for decision trees and Bagged SVM for support vector machines.
+
 
 B) Boosting (Sequential ensemble techniques):
 
@@ -59,6 +61,7 @@ Steps involved:
 4. Sequential Combination: Combine the predictions of all base models through weighted voting or averaging, where models with better performance have higher weights.
 
 
+![image](https://github.com/Tiwari666/Ensemble_RF_GBM_AdaBoosting/assets/153152895/6f5e44cc-2077-49b8-ab8e-817845b698f6)
 
 
 
@@ -77,6 +80,8 @@ predictions on other tasks as well.
 
 This is different from traditional machine learning, where a model is typically trained on a single task and then used for that task
 alone.
+
+![image](https://github.com/Tiwari666/Ensemble_RF_GBM_AdaBoosting/assets/153152895/b6fe5840-ebfe-46dd-8689-8a4af7e27beb)
 
 
 # GIST: 
@@ -109,6 +114,9 @@ Stacking works using heterogeneous solid learners.
 
 All three of these methods can work with either classification or regression problems.
 
+
+SOURCES:
+lINK 1: https://www.analyticsvidhya.com/blog/2023/01/ensemble-learning-methods-bagging-boosting-and-stacking/
 
 
 
